@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <title>COPA DO MUNDO FEMININA </title>
+    <meta charset="UTF-8">
+</head>
+<body>
+    <h1>COPA DO MUNDO FEMININA</h1>
+    <input type="text" id="valor" placeholder="Digitar algo...">
+    <input onclick="capturar()" type="submit" value="enviar"> 
+
+   <p id="valorDigitado"></p>
+<script>
+
+var capturando ="";
+
+function capturar() {
+capturando=document.getElementById("valor").value;
+document.getElementById("valorDigitado").innerHTML= capturando;
+}
+
+</script>
+</body>
+</html>
+
+
+
+

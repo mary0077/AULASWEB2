@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo04</title>
+</head>
+<body>
+<form name="frmCadastro" id="frmCadastro">
+Nome:<input name="nome" id="nome"><br>
+Idade: <input name="idade" id="idade"><br>
+<select name="estado" id="estado">
+<option value="">Selecione um estado</option>
+<option value="al">AL</option>
+<option value="ba">BA</option>
+<option value="pe">PE</option>
+</select>
+<br>
+<button id="btCadastro">Cadastrar</button>
+</form>
+<script>
+function validaForm() {
+var nome= document.getElementById("nome");
+if(nome.value == ""){
+alert ("O campo Nome não pode estar vazio");
+nome.focus();
+nome.style.backgroundColor="red";
+return false;
+}
+var idade= document.getElementById("idade");
+if(idade.value == ""){
+alert("O campo idade não pode estar vazio.");
+idade.focus();
+idade.style.backgroundColor="red";
+return false;
+
+}
+}
+</script>
+</body>
+</html>

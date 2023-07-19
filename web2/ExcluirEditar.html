@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Formulário em JavaScript</title>
+</head>
+<body>
+	<h1>Formulário</h1>
+	<form>
+		<label for="texto">Digite um texto:</label>
+		<input type="text" id="texto" name="texto">
+		<br><br>
+		<label for="select1">Opções 1:</label>
+		<select id="select1" name="select1">
+		</select>
+		<button id="btn-excluir1" type="button">Excluir</button>
+		<br><br>
+		<label for="select2">Opções 2:</label>
+		<select id="select2" name="select2">
+		</select>
+		<button id="btn-excluir2" type="button">Excluir</button>
+		<br><br>
+		<button id="btn-enviar" type="button">Enviar</button>
+	</form>
+    <script>
+// Selecione os elementos do formulário
+const form = document.querySelector('form');
+	const inputTexto = document.querySelector('#texto');
+	const select1 = document.querySelector('#select1');
+	const select2 = document.querySelector('#select2');
+	const btnEnviar = document.querySelector('#btn-enviar');
+	const btnExcluir1 = document.querySelector('#btn-excluir1');
+	const btnExcluir2 = document.querySelector('#btn-excluir2');
+
+    btnEnviar.addEventListener ('click'), () => {
+
+// Crie uma nova opção para o select 1
+		const novaOpcao1 = document.createElement('option');
+		novaOpcao1.value = inputTexto.value;
+		novaOpcao1.text = inputTexto.value;
+		select1.add(novaOpcao1);
+    }
+// Crie uma nova opção para o select 2
+const novaOpcao2 = document.createElement('option');
+		novaOpcao2.value = inputTexto.value;
+		novaOpcao2.text = inputTexto.value;
+		select2.add(novaOpcao2);
+
+// Adicione um evento de clique no botão Excluir 1
+btnExcluir1.addEventListener('click', () => {
+
+// Remova a opção selecionada do select 1
+select1.remove(select1.selectedIndex);
+});
+// Adicione um evento de clique no botão Excluir 2
+btnExcluir2.addEventListener('click', () => {
+
+// Remova a opção selecionada do select 2
+select2.remove(select2.selectedIndex);
+});
+
+
+
+    </script>
+</body>
+</html>

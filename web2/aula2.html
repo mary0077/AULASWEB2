@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Mussum Ipsum, cacilds vidis litro abertis. Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis.Viva Forevis aptent taciti sociosqu ad litora torquent.Mauris nec dolor in eros commodo tempor. Aenean aliquam molestie leo, vitae iaculis nisl.A ordem dos tratores não altera o pão duris.</p>
+    <button onclick="ficaBlue();ficaCorsiva();">Azul</button>
+    <button onclick="ficaBlack();">Preto</button>
+    <script>
+        function ficaBlue(){
+        var p1 = document.getElementById("p1");
+        p1.style.color="blue";
+        }
+        function ficaBlack(){
+        var p1 = document.getElementById("p1");
+        p1.style.color="black";
+        }
+        function ficaCorsiva(){
+            var p1 = document.getElementById("p1");
+            p1.style.fontFamily="Cursive"
+        }
+    </script>
+</body>
+</html>

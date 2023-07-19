@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Exemplo02</title>
+</head>
+<body>
+<label>Curso</label><br>
+IPI<input type="radio" id="ipi" name="curso"><br>
+ADS<input type="radio" id="ads" name="curso"><br>
+Qualidade<input type="radio" id="qual" name="curso"><br>
+Comércio<input type="radio" id="com" name="curso"><br>
+ADM<input type="radio" id="adm" name="curso"><br>
+TIMDS<input type="radio" id="timds" name="curso"><br>
+POS<input type="radio" id="pos" name="curso"><br>
+          <ul>
+
+<li class="azul">Item</li>
+<li class="vermelho">Item</li>
+<li class="azul">Item</li>
+<li class="vermelho">Item</li>
+<li class="azul">Item</li>
+<li class="vermelho">Item</li>
+         </ul>
+
+<script>
+var itensAzuis= document.getElementsByClassName("azul");
+for(var i= 0; i < itensAzuis.length; i++){
+itensAzuis[i].style.color= "blue";
+}
+var itensVermelhos= document.getElementsByClassName("vermelho");
+for( var i= 0; i < itensVermelhos.length; i++){
+itensVermelhos[i].style.color="red";
+}
+
+</script>
+
+</body>
+</html>

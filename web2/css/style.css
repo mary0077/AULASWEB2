@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #eeeeee;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3rem;
+  }
+  
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    width: 90%;
+    /* border:1px solid red;*/
+    margin: auto auto;
+  }
+  
+  input {
+    height: 60px;
+    font-size: 2rem;
+    width: 60%;
+    padding-left: 10%;
+  }
+  
+  .item {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 200%;
+    width: 100%;
+    box-shadow: 0 0 20px #cdc5c5;
+    margin-bottom: 2%;
+    cursor: pointer;
+  }
+  
+  .item.clicado {
+    background: #d4f6d9;
+  }
+  
+  .item.clicado .item-nome {
+    text-decoration: line-through;
+    color: gray;
+  }
+  
+  .item-nome {
+    flex: 55%;
+    
+    font-size: 20px;
+    font-weight: bold;
+  }
+  
+  .item-botao {
+    flex: 10%;
+   
+  }
+  
+  .item-botao {
+    flex: 10%;
+   
+  }
+  
+  .delete {
+    background: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 100px;
+    width: 30%;
+    cursor: pointer;
+    margin-top: 5%;
+  }
+  .editar {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    height: 100px;
+    width: 150%;
+    cursor: pointer;
+    
+    
+  }
+  
+  footer {
+    display: flex;
+    flex-flow: row-wrap;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    background:rgb(226, 237, 226);
+    height: 40px;
+    width: 100%;
+  }
+  
+  footer a {
+    color: rgba(52, 129, 73, 0.34);
+  }
+  
+  footer i {
+    color: red;
+    font-size: 22px;
+  }
+  
